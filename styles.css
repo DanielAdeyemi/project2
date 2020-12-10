@@ -54,7 +54,20 @@ article {
 }
 
 
+.card-header {
+  font-weight: bold;
+}
 
+.card-text {
+  color: blueviolet;
+  font-size: large;
+}
+
+#end {
+  font-size: x-large;
+  font-style: italic;
+  text-decoration: underline;
+}
 
 @media only screen and (min-width: 768px) {
   main {

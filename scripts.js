@@ -20,9 +20,29 @@ $(document).ready(function() {
     }
   var sel = $("#kchoice");
   sel.change(function() {
-    var value = $(this).val();
-    document.getElementById("end").innerHTML = value;
+    var print = $(this).val();
+    if (print === "Other") {
+      $("#other").show();
+      $("#personal").show();
+      $("#lesse").click(function(){
+        var print = document.getElementById("personal").value;
+        if (print === "") {
+          alert("No input! Try one more time!")
+        }
+        else {
+          document.getElementById("end").innerHTML = print;
+        $("#result").show();
+        event.preventDefault();
+        }
+        
+      });
+      
+    }
+    else {
+      document.getElementById("end").innerHTML = print;
     $("#result").show();
-  })
+    }
+    
+  });
   });
 });
