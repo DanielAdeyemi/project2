@@ -33,10 +33,10 @@
       <button type="submit" id="first">Go!</button>
       <div id="yes">
         <select class="form-select" aria-label="Disabled select example" id="kchoice">
-          <option selected disabled>Open this select menu</option>
+          <option selected disabled>Choose from one of the languages below</option>
           <option value="Ruby">Ruby</option>
-          <option value="C-sharp">C#</option>
-          <option value="Java-Script">Java Script</option>
+          <option value="C#">C#</option>
+          <option value="Java Script">Java Script</option>
           <option value="Go">Go</option>
           <option value="Python">Python</option>
           <option value="Rust">Rust</option>
@@ -52,25 +52,61 @@
       <div id="no">
         <p class="h1">Let's go through little quiz</p>
         <img src="img/2.jpg" alt="Picture of web developer">
-        <p class="question" id="q1">Question 1 </p>
-          <button type="button" class="btn btn-primary" id="r1">Yes</button>
-          <button type="button" class="btn btn-primary" id="r2">No</button>
-        <p class="question" id="q2">Question 2 </p>
+        <p class="question">Do you like to follow strict rules? </p>
+        <select class="form-select" aria-label="Disabled select example" id="q1">
+          <option value="default" selected disabled>Choose your answer below</option>
+          <option value="q1a1">Yes</option>
+          <option value="q1a2">Most of the time</option>
+          <option value="q1a3">Better no</option>
+          <option value="q1a4">No</option>
+        </select>
+        <p class="question" >On scale from 1 to 5 how would you describe your ability to think logically? </p>
+        <select class="form-select" aria-label="Disabled select example" id="q2">
+          <option value="default" selected disabled>Choose your answer below</option>
+          <option value="q2a1">1</option>
+          <option value="q2a2">2</option>
+          <option value="q2a3">3</option>
+          <option value="q2a4">4</option>
+          <option value="q2a5">5</option>
+        </select>
+        <p class="question" >Which of the following is NOT true?  </p>
+        <select class="form-select" aria-label="Disabled select example" id="q3">
+          <option value="default" selected disabled>Choose your answer below</option>
+          <option value="q3a1">2 + 2 = 4</option>
+          <option value="q3a2">7 < 8</option>
+          <option value="q3a3">234*585 = 136975 </option>
+          <option value="q3a4">417*76 = 35796 </option>
+        </select>
+        <p class="question" >Pick show you enjoy </p>
+        <select class="form-select" aria-label="Disabled select example" id="q4">
+          <option value="default" selected disabled>Choose your answer below</option>
+          <option value="q4a1">Friends</option>
+          <option value="q4a2">Black Mirror</option>
+          <option value="q4a3">Order</option>
+          <option value="q4a4">None of the above</option>
+        </select>
+        <p class="question" >If a giraffe has two eyes, a monkey has two eyes, and an elephant has two eyes, how many eyes do we have? </p>
+        <select class="form-select" aria-label="Disabled select example" id="q5">
+          <option selected value="default" disabled>Choose your answer below</option>
+          <option value="q5a1">2</option>
+          <option value="q5a2">4</option>
+          <option value="q5a3">6</option>
+          <option value="q5a4">8</option>
+        </select>
 
-        <p class="question" id="q3">Question 3 </p>
-
-        <p class="question" id="q4">Question 4 </p>
-
-        <p class="question" id="q5">Question 5 </p>
+        <button type="submit" id="finish">Click to get your result</button>
 
       </div>
-      <div class="card border-success mb-3" style="max-width: 18rem;" id="result">
-        <div class="card-header">We got your result!</div>
-        <div class="card-body text-success">
-          <h5 class="card-title">You were born for programming</h5>
-          <p class="card-text">Your language is <span id="end">HTML</span>.</p>
-        </div>
+      <div id="finita">
+        <img src="img/2.jpg" alt="Picture of web developer">
+        <div class="card border-success mb-3" style="max-width: 18rem;" id="result">
+          <div class="card-header">We got your result!</div>
+          <div class="card-body text-success">
+            <h5 class="card-title">You were born for programming</h5>
+            <p class="card-text">Your language is <span id="end"></span>.</p>
+          </div>
       </div>
+    </div>
     </article>
     </main>
 </body>

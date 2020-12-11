@@ -1,4 +1,4 @@
-#other, #yes, #no, #result, #q1, #q2, #q3, #q4, #q5, #r1, #r2 {
+#other, #yes, #no, #finita, .question {
   text-align: center;
   display: none;
 }
@@ -69,6 +69,14 @@ article {
   text-decoration: underline;
 }
 
+#box {
+  align-self: center;
+}
+
+#finita {
+  text-align: center;
+  width: 100%;
+}
 @media only screen and (min-width: 768px) {
   main {
     display: flex;
